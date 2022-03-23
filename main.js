@@ -33,6 +33,7 @@ function copyAll (i, o, m) {
 			const source = i + '/' + file;
 			const destination = o + '/' +  file.split('.')[0].replace(replaceWord, m)+ '.' + file.split('.')[1];
 			copy(source, destination);
+			console.log(destination);
 		});
 	});
 }
